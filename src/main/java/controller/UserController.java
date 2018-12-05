@@ -115,6 +115,7 @@ public class UserController {
 		String msg=null;
 		for(String s :list) {
 			msg= msg+s;
+			System.out.println(s);
 		}
 		
 		return msg;
