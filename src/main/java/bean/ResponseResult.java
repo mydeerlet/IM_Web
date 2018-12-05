@@ -51,6 +51,7 @@ public class ResponseResult<T> implements Serializable
 		result = prime * result + ((state == null) ? 0 : state.hashCode());
 		return result;
 	}
+	
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
