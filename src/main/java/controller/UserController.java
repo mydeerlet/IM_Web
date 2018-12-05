@@ -117,7 +117,6 @@ public class UserController {
 			msg= msg+s;
 			System.out.println(s);
 		}
-		
 		return msg;
 	
 	}
