@@ -1,9 +1,15 @@
+import java.util.Date;
+
 import org.junit.Test;
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import bean.User;
-import dao.UserDao;
+
+
+import bean.LoveBean;
+import dao.LoveDao;
+
+
 
 
 
@@ -17,13 +23,20 @@ public class t {
 						"application-dao.xml");
 
 		
-		UserDao d  = ac.getBean("userDao",UserDao.class);
+		LoveDao d  = ac.getBean("loveDao",LoveDao.class);
+		LoveBean bean = new LoveBean();
+		Date dd = new Date(System.currentTimeMillis());
+		bean.setResult("的");
+		
+		
+		bean.setCrateDate(dd);
 		
 
-	    User user =	d.findUser("123");
+		d.getAll();
+		
 		
 	    
-		System.out.println(user.getImCode()+"===");	
+	
 	    
 	    
 	}
