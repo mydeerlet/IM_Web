@@ -39,7 +39,7 @@
 			<table cellpadding="0" cellspacing="0">
 				<tr>
 					<th>序号</th>
-					<th>ID</th>
+					<th>用户id</th>
 					<th>结果</th>
 					<th>插入时间</th>
 				</tr>
@@ -47,7 +47,7 @@
 				<c:forEach items="${ listDT}" var="item" varStatus = "r" >
 					<tr>
 						<td>${r.count }</td>
-						<td>${item.id }</td>
+						<td>${item.userId }</td>
 						<td>${item.result }</td>
 						<td><fmt:formatDate value="${item.crateDate }" type="date" pattern="yyyy-MM-dd HH:mm:ss"/></td>
 					</tr>

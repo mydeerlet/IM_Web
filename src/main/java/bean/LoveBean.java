@@ -5,9 +5,18 @@ import java.util.Date;
 public class LoveBean {
 
 	private int id;
+	private String userId;
 	private String result;
 	private Date crateDate;
 	
+	
+	
+	public String getUserId() {
+		return userId;
+	}
+	public void setUserId(String userId) {
+		this.userId = userId;
+	}
 	public int getId() {
 		return id;
 	}
@@ -26,13 +35,14 @@ public class LoveBean {
 	public void setCrateDate(Date crateDate) {
 		this.crateDate = crateDate;
 	}
-	
-	
-	
 	@Override
 	public String toString() {
-		return "LoveBean [id=" + id + ", result=" + result + ", crateDate=" + crateDate + "]";
+		return "LoveBean [id=" + id + ", userId=" + userId + ", result=" + result + ", crateDate=" + crateDate + "]";
 	}
+	
+	
+	
+
 	
 	
 	

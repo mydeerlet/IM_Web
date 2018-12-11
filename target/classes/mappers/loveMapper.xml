@@ -7,8 +7,8 @@
 
 
 	<insert id="save" parameterType="bean.LoveBean">
-		insert into love (result , crateDate) 
-		values (#{result} , #{crateDate})
+		insert into love (userId, result , crateDate) 
+		values (#{userId} , #{result} , #{crateDate})
 	</insert>
 	
 
